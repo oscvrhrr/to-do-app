@@ -19,7 +19,20 @@
 
 body {
     background-color: #20212C;
+    
 }
+
+.form {
+    position: absolute;
+    top: 15.6rem;
+    left: 30rem;
+    width: 30rem;
+    height: 26.8rem;
+    background-color: #2B2C37;
+    display: none;
+    
+}
+
 
 header {
     background-color: #2B2C37;
@@ -70,13 +83,31 @@ header {
     }
     .widget-container {
         margin: 4rem 1rem 0 0;
-        padding-left: 2rem;
         color: #828FA3;
         h3 {
             text-transform: uppercase;
             font-size: .75rem;
             letter-spacing: 2.4px;
             font-family: "MyFontBold";
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        .new-board-button {
+            display: flex;
+            align-items: center;
+            width: 17.25rem;
+            height: 3rem;
+            color: #635FC7;
+            font-family: "MyFontBold";
+            padding-left: 2rem;
+            border-radius: 0 22px 22px 0;
+        }
+        .new-board-button:hover {
+            background-color: #635FC7;
+            color: #fff;
+            cursor: pointer;
+
         }
     }
+
 }
