@@ -19,6 +19,35 @@ function widgetContainer() {
 function boardForm() {
   const form = document.createElement('form');
   form.classList.add('form')
+  
+  const title = document.createElement('h3');
+  title.innerText = 'Add New Board';
+  form.appendChild(title);
+
+
+  const boardInputLabel = document.createElement('label'),
+  boardNameInput = document.createElement('input');
+  boardInputLabel.innerText = 'Board Name';
+  form.appendChild(boardInputLabel)
+  form.appendChild(boardNameInput)
+
+  const boardColumnLabel = document.createElement('label'),
+  boardColumnInput = document.createElement('input')
+  // boardColumnInput = document.createElement('input');
+
+  boardColumnLabel.innerText = 'Board Columns'
+  form.appendChild(boardColumnLabel)
+  form.appendChild(boardColumnInput)
+
+  const addNewColumnBtn = document.createElement('div'),
+  createNewBoardBtn = document.createElement('div');
+  addNewColumnBtn.innerText = '+ Add New Column'
+  createNewBoardBtn.innerText = 'Create New Board'
+  createNewBoardBtn.classList.add('create-new-board-btn')
+  form.appendChild(addNewColumnBtn)
+  form.appendChild(createNewBoardBtn)
+
+
   document.body.appendChild(form)
 
   return form
@@ -32,7 +61,8 @@ function createNewBoardComponent() {
   const form = boardForm();
   
   button.addEventListener('click', () => {
-    form.style.display = 'block'
+    form.style.display = 'flex'
+
   })
   
 
@@ -40,7 +70,6 @@ function createNewBoardComponent() {
   return button
 }
 
-// boardForm()
 
 
 

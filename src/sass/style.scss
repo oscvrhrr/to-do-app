@@ -30,6 +30,53 @@ body {
     height: 26.8rem;
     background-color: #2B2C37;
     display: none;
+    font-family: 'MyFontNormal';
+    color: #fff;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 6px;
+    h3 {
+        font-size: 1.125rem;
+        font-family: 'MyFontBold';
+    }
+    label {
+        display: block;
+        margin: 1.5rem 0 .5rem 0;
+
+        
+    }
+    input {
+        display: block;
+        width: 26rem;
+        height: 2.5rem;
+        background-color: #2B2C37;
+        box-shadow: none;
+        border: 1px solid hsla(216, 15%, 57%, .25);
+        border-radius: 4px;
+        color: #fff;
+        line-height: 23px;
+        font-size: .8rem;
+        padding-left: 1rem;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        color: #635FC7;
+        height: 2.5rem;
+        width: 26rem;
+        margin: .75rem 0 .75rem;
+        font-size: 0.8rem;
+        font-family: "MyFontBold";
+    }
+    .create-new-board-btn {
+        background-color: #635FC7;
+        color: white;
+    }
     
 }
 
