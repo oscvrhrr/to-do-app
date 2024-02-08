@@ -4,12 +4,13 @@ function header() {
     addNewTaskBtn = document.createElement("button"),
     options = document.createElement("div"),
     buttonContainer = document.createElement("div");
-
+    
+    title.classList.add('header-board-title');
     buttonContainer.appendChild(addNewTaskBtn);
     buttonContainer.appendChild(options);
 
     options.classList.add('options')
-    title.textContent = 'Platform Launch';
+    title.textContent = '';
     addNewTaskBtn.textContent = '+ Add New Task';
     
     const ElementList = [title, buttonContainer];

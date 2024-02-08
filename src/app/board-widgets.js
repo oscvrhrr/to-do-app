@@ -3,6 +3,7 @@ function widgetContainer() {
   const container = document.createElement("div"),
     containerTitle = document.createElement("h3"),
     list = document.createElement("ul");
+    list.id = 'board-list';
 
   containerTitle.innerText =  "All Boards"
   container.classList.add('widget-container')
@@ -28,19 +29,22 @@ function boardForm() {
   const boardInputLabel = document.createElement('label'),
   boardNameInput = document.createElement('input');
   boardInputLabel.innerText = 'Board Name';
+  boardNameInput.id = "board-name";
   form.appendChild(boardInputLabel)
   form.appendChild(boardNameInput)
 
   const boardColumnLabel = document.createElement('label'),
-  boardColumnInput = document.createElement('input')
-  // boardColumnInput = document.createElement('input');
+  boardColumnInput = document.createElement('input');
+  boardColumnInput.id = 'board-column';
+
 
   boardColumnLabel.innerText = 'Board Columns'
   form.appendChild(boardColumnLabel)
   form.appendChild(boardColumnInput)
 
   const addNewColumnBtn = document.createElement('div'),
-  createNewBoardBtn = document.createElement('div');
+  createNewBoardBtn = document.createElement('button');
+  createNewBoardBtn.setAttribute('type', 'submit');
   addNewColumnBtn.innerText = '+ Add New Column'
   createNewBoardBtn.innerText = 'Create New Board'
   createNewBoardBtn.classList.add('create-new-board-btn')
@@ -75,4 +79,5 @@ function createNewBoardComponent() {
 
 
 
-export { widgetContainer };
+
+export { widgetContainer, createNewBoardComponent };

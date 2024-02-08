@@ -60,7 +60,7 @@ body {
         font-size: .8rem;
         padding-left: 1rem;
     }
-    div {
+    div, button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,6 +76,7 @@ body {
     .create-new-board-btn {
         background-color: #635FC7;
         color: white;
+        border: none;
     }
     
 }
@@ -96,6 +97,7 @@ header {
         font-family: 'MyFontBold';
         font-size: 1.5rem;
         line-break: 1.875rem;
+        text-transform: capitalize;
     }
     button{
         background-color: #635FC7;
@@ -144,11 +146,13 @@ header {
             align-items: center;
             width: 17.25rem;
             height: 3rem;
-            color: #635FC7;
+            color: #828FA3;
             font-family: "MyFontBold";
             padding-left: 2rem;
             border-radius: 0 22px 22px 0;
+            text-transform: capitalize;
         }
+    
         .new-board-button:hover {
             background-color: #635FC7;
             color: #fff;
